@@ -9,21 +9,23 @@
 /* Begin PBXBuildFile section */
 		24B95E5126EF384B008EF416 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24B95E5026EF384B008EF416 /* AppDelegate.swift */; };
 		24B95E5326EF384B008EF416 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24B95E5226EF384B008EF416 /* SceneDelegate.swift */; };
-		24B95E5526EF384B008EF416 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24B95E5426EF384B008EF416 /* ViewController.swift */; };
 		24B95E5826EF384B008EF416 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 24B95E5626EF384B008EF416 /* Main.storyboard */; };
 		24B95E5A26EF384C008EF416 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 24B95E5926EF384C008EF416 /* Assets.xcassets */; };
 		24B95E5D26EF384C008EF416 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 24B95E5B26EF384C008EF416 /* LaunchScreen.storyboard */; };
+		24B95E6B26EF3A15008EF416 /* LoginController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24B95E6A26EF3A15008EF416 /* LoginController.swift */; };
+		24B95E6D26EF3F8D008EF416 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24B95E6C26EF3F8D008EF416 /* Extensions.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		24B95E4D26EF384B008EF416 /* Uber_clone.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Uber_clone.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		24B95E5026EF384B008EF416 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		24B95E5226EF384B008EF416 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		24B95E5426EF384B008EF416 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		24B95E5726EF384B008EF416 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		24B95E5926EF384C008EF416 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		24B95E5C26EF384C008EF416 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		24B95E5E26EF384C008EF416 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		24B95E6A26EF3A15008EF416 /* LoginController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginController.swift; sourceTree = "<group>"; };
+		24B95E6C26EF3F8D008EF416 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +58,56 @@
 		24B95E4F26EF384B008EF416 /* Uber_clone */ = {
 			isa = PBXGroup;
 			children = (
+				24B95E6926EF3959008EF416 /* Model */,
+				24B95E6826EF3957008EF416 /* View */,
+				24B95E6726EF3956008EF416 /* Controller */,
+				24B95E6526EF3952008EF416 /* Service */,
+				24B95E6426EF394D008EF416 /* Utils */,
 				24B95E5026EF384B008EF416 /* AppDelegate.swift */,
 				24B95E5226EF384B008EF416 /* SceneDelegate.swift */,
-				24B95E5426EF384B008EF416 /* ViewController.swift */,
 				24B95E5626EF384B008EF416 /* Main.storyboard */,
 				24B95E5926EF384C008EF416 /* Assets.xcassets */,
 				24B95E5B26EF384C008EF416 /* LaunchScreen.storyboard */,
 				24B95E5E26EF384C008EF416 /* Info.plist */,
 			);
 			path = Uber_clone;
+			sourceTree = "<group>";
+		};
+		24B95E6426EF394D008EF416 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				24B95E6C26EF3F8D008EF416 /* Extensions.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		24B95E6526EF3952008EF416 /* Service */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+		24B95E6726EF3956008EF416 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				24B95E6A26EF3A15008EF416 /* LoginController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		24B95E6826EF3957008EF416 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		24B95E6926EF3959008EF416 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,9 +180,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				24B95E5526EF384B008EF416 /* ViewController.swift in Sources */,
 				24B95E5126EF384B008EF416 /* AppDelegate.swift in Sources */,
+				24B95E6B26EF3A15008EF416 /* LoginController.swift in Sources */,
 				24B95E5326EF384B008EF416 /* SceneDelegate.swift in Sources */,
+				24B95E6D26EF3F8D008EF416 /* Extensions.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -288,6 +332,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = Uber_clone/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -306,6 +351,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = Uber_clone/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
