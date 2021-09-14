@@ -127,6 +127,9 @@ class SignUpController: UIViewController {
                           "accountType":accountTypeIndex] as [String : Any]
 
             Database.database().reference().child("users").child(uid).updateChildValues(values) { [weak self] error, ref in
+                
+                guard let controller = UIApplication.shared.windows.first(where: { $0.isKeyWindow })?.rootViewController as? HomeController else { return }
+                controller.configureUI()
                 self?.dismiss(animated: true, completion: nil)
             }
             

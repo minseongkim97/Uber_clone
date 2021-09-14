@@ -90,6 +90,8 @@ class LoginController: UIViewController {
                 print(error.localizedDescription)
                 return
             }
+            guard let controller = UIApplication.shared.windows.first(where: { $0.isKeyWindow })?.rootViewController as? HomeController else { return }
+            controller.configureUI()
             self?.dismiss(animated: true, completion: nil)
         }
     }

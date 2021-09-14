@@ -18,6 +18,9 @@
 		24B95E7126EF7DA4008EF416 /* AuthButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24B95E7026EF7DA4008EF416 /* AuthButton.swift */; };
 		24B95E7326F082B6008EF416 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 24B95E7226F082B6008EF416 /* GoogleService-Info.plist */; };
 		24B95E7526F0A08E008EF416 /* HomeController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24B95E7426F0A08E008EF416 /* HomeController.swift */; };
+		24B95E7726F0CE80008EF416 /* LocationInputActivationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24B95E7626F0CE80008EF416 /* LocationInputActivationView.swift */; };
+		24B95E7926F0F8CF008EF416 /* LocationInputView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24B95E7826F0F8CF008EF416 /* LocationInputView.swift */; };
+		24B95E7B26F10457008EF416 /* LocationCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24B95E7A26F10457008EF416 /* LocationCell.swift */; };
 		C2E0FAC0D45AC5DBB9578069 /* Pods_Uber_clone.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8719F0DF4B654FF9AED77487 /* Pods_Uber_clone.framework */; };
 /* End PBXBuildFile section */
 
@@ -36,6 +39,9 @@
 		24B95E7026EF7DA4008EF416 /* AuthButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthButton.swift; sourceTree = "<group>"; };
 		24B95E7226F082B6008EF416 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		24B95E7426F0A08E008EF416 /* HomeController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeController.swift; sourceTree = "<group>"; };
+		24B95E7626F0CE80008EF416 /* LocationInputActivationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationInputActivationView.swift; sourceTree = "<group>"; };
+		24B95E7826F0F8CF008EF416 /* LocationInputView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationInputView.swift; sourceTree = "<group>"; };
+		24B95E7A26F10457008EF416 /* LocationCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationCell.swift; sourceTree = "<group>"; };
 		8719F0DF4B654FF9AED77487 /* Pods_Uber_clone.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Uber_clone.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A5748EED0A772799858E1C21 /* Pods-Uber_clone.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Uber_clone.release.xcconfig"; path = "Target Support Files/Pods-Uber_clone/Pods-Uber_clone.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -118,6 +124,9 @@
 			isa = PBXGroup;
 			children = (
 				24B95E7026EF7DA4008EF416 /* AuthButton.swift */,
+				24B95E7626F0CE80008EF416 /* LocationInputActivationView.swift */,
+				24B95E7826F0F8CF008EF416 /* LocationInputView.swift */,
+				24B95E7A26F10457008EF416 /* LocationCell.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -264,9 +273,12 @@
 				24B95E6F26EF7585008EF416 /* SignUpController.swift in Sources */,
 				24B95E7126EF7DA4008EF416 /* AuthButton.swift in Sources */,
 				24B95E7526F0A08E008EF416 /* HomeController.swift in Sources */,
+				24B95E7926F0F8CF008EF416 /* LocationInputView.swift in Sources */,
 				24B95E5126EF384B008EF416 /* AppDelegate.swift in Sources */,
 				24B95E6B26EF3A15008EF416 /* LoginController.swift in Sources */,
+				24B95E7B26F10457008EF416 /* LocationCell.swift in Sources */,
 				24B95E5326EF384B008EF416 /* SceneDelegate.swift in Sources */,
+				24B95E7726F0CE80008EF416 /* LocationInputActivationView.swift in Sources */,
 				24B95E6D26EF3F8D008EF416 /* Extensions.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
