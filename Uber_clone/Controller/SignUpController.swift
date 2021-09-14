@@ -126,8 +126,8 @@ class SignUpController: UIViewController {
                           "password": password,
                           "accountType":accountTypeIndex] as [String : Any]
 
-            Database.database().reference().child("users").child(uid).updateChildValues(values) { error, ref in
-                print("Successfully registered user and saved data.")
+            Database.database().reference().child("users").child(uid).updateChildValues(values) { [weak self] error, ref in
+                self?.dismiss(animated: true, completion: nil)
             }
             
         }
